@@ -24,20 +24,16 @@
     <?= $this->renderSection('extraHead') ?>
 </head>
 
-<body class="<?= $bodyClass ?? 'homepage1-body' ?>">
+<body class="homepage1-body <?= $bodyClass ?? 'homepage1-body' ?>">
 
-    <?= $this->include('partials/preloader') ?>
-    <?= $this->include('partials/progress-scroll') ?>
-    <?= $this->include('partials/search-overlay') ?>
-
+   -
     <!-- Header -->
-    <?= $this->include('partials/header-desktop') ?>
-    <?= $this->include('partials/header-mobile') ?>
+   
 
     <!-- Page content -->
-    <main>
+    <!-- <main> -->
         <?= $this->renderSection('content') ?>
-    </main>
+    <!-- </main> -->
 
     <!-- Footer -->
     <?= $this->include('partials/footer') ?>

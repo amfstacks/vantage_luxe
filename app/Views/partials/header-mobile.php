@@ -1,4 +1,4 @@
-<div class="mobile-header mobile-header1 d-block d-lg-none">
+ <div class="mobile-header mobile-header1 d-block d-lg-none">
     <div class="container-fluid">
       <div class="col-12">
         <div class="mobile-header-elements">
