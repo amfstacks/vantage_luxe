@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= esc($title ?? 'HouseBox - Real Estate') ?></title>
+    <title><?= esc($title ?? 'vantage Luxe') ?></title>
 
+    <!-- Fav icon -->
     <link rel="shortcut icon" href="<?= base_url('assets/img/logo/fav-logo1.png') ?>" type="image/x-icon">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="<?= base_url('assets/css/plugins/bootstrap.min.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/plugins/aos.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/plugins/fontawesome.css') ?>">
@@ -18,29 +20,26 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/plugins/nice-select.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/plugins/swiper-slider.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/main.css') ?>">
-
+ <script src="<?= base_url('assets/js/plugins/jquery-3-7-1.min.js') ?>"></script>
     <?= $this->renderSection('extraHead') ?>
 </head>
 
-<body class="<?= esc($body_class ?? 'homepage1-body') ?>">
+<body class="homepage1-body <?= $bodyClass ?? 'homepage1-body' ?>">
 
-    <?= $this->include('partials/preloader') ?>
-    <?= $this->include('partials/scroll-progress') ?>
-    <?= $this->include('partials/search-overlay') ?>
+   -
+    <!-- Header -->
+   
 
-    <!-- Headers -->
-    <?= $this->include('partials/header-desktop') ?>
-    <?= $this->include('partials/header-mobile') ?>
-
-
-    <main>
+    <!-- Page content -->
+    <!-- <main> -->
         <?= $this->renderSection('content') ?>
-    </main>
+    <!-- </main> -->
 
+    <!-- Footer -->
     <?= $this->include('partials/footer') ?>
 
-    <!-- Scripts at bottom -->
-    <script src="<?= base_url('assets/js/plugins/jquery-3-7-1.min.js') ?>"></script>
+    <!-- Scripts (bottom for performance) -->
+
     <script src="<?= base_url('assets/js/plugins/bootstrap.min.js') ?>"></script>
     <script src="<?= base_url('assets/js/plugins/fontawesome.js') ?>"></script>
     <script src="<?= base_url('assets/js/plugins/aos.js') ?>"></script>
