@@ -10,6 +10,10 @@
 
     <!-- About -->
     <?= $this->include('partials/about-section') ?>
+    <?= $this->include('partials/featured-properties') ?>
+    <?= $this->include('partials/property-locations') ?>
+    <?= $this->include('partials/cta') ?>
+
 
     <!-- More sections later: featured, testimonials, etc. -->
 
